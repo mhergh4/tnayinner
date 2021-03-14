@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+</head>
+<body>
+	<div align="center">
+		<p align="center">1st number</p>
+	  <input id="1">
+</div>
+<div align="center">
+	<p align="center">digital operations</p>
+	<input id="2">
+</div>
+<div align="center">
+	<p align="center">2st number</p>
+	<input id="3">
+
+</div>
+<p align="center"><button  class="bt1" onclick="o1()" >Result</button></p>
+
+<script type="text/javascript">
+	  function o1() {
+		let a=+document.getElementById("1").value
+		let b=document.getElementById("2").value
+		let c=+document.getElementById("3").value
+ 
+		if(b=="+"){
+            alert(a+c)
+        }
+        else if(b=="-"){
+            alert(a-c)
+        }
+        else if(b=="*"){
+            alert(a*c)
+        }
+        else if(b=="/"){
+            alert(a/c)
+        }
+        else if(b=="%"){
+            alert(a%c)
+        }
+	}
+</script>
+</body>
+</html>
