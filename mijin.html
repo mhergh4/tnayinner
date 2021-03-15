@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gorcoxutyunner</title>
+</head>
+<body>
+	<div>
+		<p>1st number</p>
+		<input id="1">
+	</div>
+	<div>
+		<p>2nd number</p>
+		<input id="2">
+	</div>
+<div>
+		<p>3rd number</p>
+		<input id="3">
+	</div>
+<div>
+		<p>4th number</p>
+		<input id="4">
+	</div>
+<div>
+		<p>5th number</p>
+		<input id="5">
+	</div>
+<div>
+		<p>6th number</p>
+		<input id="6">
+	</div>
+<button class="bt1" onclick="o1()">Result</button>
+<script type="text/javascript">
+	function o1() {
+
+	let a=+document.getElementById("1").value;
+	let b=+document.getElementById("2").value;
+	let c=+document.getElementById("3").value;
+	let d=+document.getElementById("4").value;
+	let e=+document.getElementById("5").value;
+	let f=+document.getElementById("6").value;
+	var arr=[a,b,c,d,e,f]
+	const n=6;
+     alert("the sum is "+(a+b+c+d+e+f))
+     alert("the arithmetic average is "+(a+b+c+d+e+f)/n);
+     alert("in ascending order "+""+arr.sort(function(a,b){return a-b}))
+     alert("in descending order "+""+arr.sort(function(a,b){return b-a}))
+  }
+</script>
+</body>
+</html>
